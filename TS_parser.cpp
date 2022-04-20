@@ -20,12 +20,12 @@ int main(int argc, char* argv[], char* envp[]) {
   xTS_PacketHeader TS_PacketHeader;
 
   int32_t TS_PacketId = 0;
-  uint8_t TS_PacketBuffer[188];
+  uint8_t Buffer[188];
   while (!feof(file)) {
     // TODO - read from file
-    int readBytes = fread(TS_PacketBuffer, 188, 1, file);
+    fread(Buffer, 188, 1, file);
     
-    TS_PacketHeader.Parse(TS_PacketBuffer);
+    TS_PacketHeader.Parse(Buffer);
 
     printf("%010d ", TS_PacketId);
     TS_PacketHeader.Print();
