@@ -17,7 +17,7 @@ int32_t Parse(const uint8_t* Input, uint8_t AdaptationFieldControl)
     uint32_t LMask =  0b1111111100000000;
     uint32_t DCMask = 0b0000000010000000;
     uint32_t RAMask = 0b0000000001000000;
-    uint32_t SPMask = 0b0000000000100000;
+    uint32_t SPMask =  0b0000000000100000;
     uint32_t PRMask = 0b0000000000010000;
     uint32_t ORMask = 0b0000000000001000;
     uint32_t SFMask = 0b0000000000000100;
