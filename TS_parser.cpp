@@ -31,7 +31,6 @@ int main(int argc, char* argv[], char* envp[]) {
 
     printf("%010d ", TS_PacketId);
     TS_PacketHeader.Print();
-
     if(TS_PacketHeader.getAF() == 2 || TS_PacketHeader.getAF() == 3)
     {
       cout << " AF: ";
